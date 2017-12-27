@@ -1,0 +1,21 @@
+button {
+  background-color: transparent;
+  border-radius: 6px;
+  margin-top: 2em;
+  padding: 1em;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+}
+
+.quoteContainer {
+  display: inline-block;
+  background-color: white;
+
+  margin: 0 auto;
+  padding: 4em;
+  border-radius: 6px;
+  text-align: center;
+}
