@@ -10,9 +10,9 @@ class App extends React.Component {
 
   showAQuote = () => {
     $.getJSON(
-      "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
+      "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
       function(a) {
-        $(".quote").html(a[0].content + "<p>&mdash; " + a[0].title + "</p>");
+        $(".quote").html(`<i>${a[0].content}</i><p>&mdash; ${a[0].title}</p>`);
       }
     );
 
@@ -20,10 +20,6 @@ class App extends React.Component {
       "#" + ((Math.random() * 0xffffff) << 0).toString(16);
     $("body").css("background-color", randomColorChange);
     $("button").css("background-color", randomColorChange);
-
-    // $("body").animate({
-    //   backgroundColor: 
-    // })
 
     this.setState({ showQuote: true });
   };

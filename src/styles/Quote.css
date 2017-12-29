@@ -1,10 +1,11 @@
 button {
-  background-color: transparent;
+  background-color: #d46d53;
   border-radius: 6px;
   margin-top: 2em;
   padding: 1em;
   color: white;
   cursor: pointer;
+  font-size: 0.8em;
 }
 
 button:active {
@@ -13,7 +14,6 @@ button:active {
 .quoteContainer {
   display: inline-block;
   background-color: white;
-
   margin: 0 auto;
   padding: 4em;
   border-radius: 6px;
